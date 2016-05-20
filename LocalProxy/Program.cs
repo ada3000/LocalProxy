@@ -28,7 +28,7 @@ namespace LocalProxy
 
             //var explicitEndPoint = new TransparentProxyEndPoint(IPAddress.Any, 1237, true);
 
-            var explicitEndPoint = new ExplicitProxyEndPoint(IPAddress.Any, 1238, true)
+            var explicitEndPoint = new ExplicitProxyEndPoint(IPAddress.Any, Config.Port, Config.EnableSsl)
             {
                 //Exclude Https addresses you don't want to proxy/cannot be proxied
                 //for example exclude dropbox client which use certificate pinning
