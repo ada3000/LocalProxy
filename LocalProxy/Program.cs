@@ -22,6 +22,7 @@ namespace LocalProxy
 
             //Console.ReadKey();
 
+            Console.Title = "LP Port: " + Config.Port + " SSL: " + Config.EnableSsl;
 
             ProxyServer.BeforeRequest += OnRequest;
             ProxyServer.BeforeResponse += OnResponse;
