@@ -80,16 +80,16 @@ namespace LocalProxy
             //To cancel a request with a custom HTML content
             //Filter URL
 
-            if (e.ProxySession.Request.RequestUri.AbsoluteUri.Contains("google.com"))
-            {
-                e.Ok("<!DOCTYPE html>" +
-                    "<html><body><h1>" +
-                    "Website Blocked" +
-                    "</h1>" +
-                    "<p>Blocked by titanium web proxy.</p>" +
-                    "</body>" +
-                    "</html>");
-            }
+            //if (e.ProxySession.Request.RequestUri.AbsoluteUri.Contains("google.com"))
+            //{
+            //    e.Ok("<!DOCTYPE html>" +
+            //        "<html><body><h1>" +
+            //        "Website Blocked" +
+            //        "</h1>" +
+            //        "<p>Blocked by titanium web proxy.</p>" +
+            //        "</body>" +
+            //        "</html>");
+            //}
         }
 
         //Test script injection
